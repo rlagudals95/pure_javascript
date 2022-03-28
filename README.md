@@ -1,4 +1,4 @@
-# mvp
+# MVP
 1. html canvas로 text 작성
 2. 이미지에서 text 추출 (구글 api 사용)
 3. 파파고 api를 이용한 번역
