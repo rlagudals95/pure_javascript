@@ -1,52 +1,106 @@
 .container {
-    
-};
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-self: center;
+  padding-top: 50px;
+}
 
 .center {
-    margin: 0px auto;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-};
+  margin: 0px auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .c-flex {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#canvas {
+  margin: 0px auto;
+
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 9px;
+}
+
+#bottom-options {
+  margin-top: 40px;
+}
+
+.bottom-btn {
+  width: 100px;
+  height: 100px;
+  padding: 10px 15px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 7px;
+  cursor: pointer;
+  margin-right: 5px;
+  color: white;
+  font-weight: bold;
 }
 
 .card {
-    width: 80%;
-    height: 90px;
-    margin : 10px auto 0px auto;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 9px;
-    padding: 10px;
-};
+  width: 80%;
+  height: 90px;
+  margin: 10px auto 0px auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 9px;
+  padding: 10px;
+}
 
 .title {
-    font-weight: bold;
-    color: red !important;
+  font-weight: bold;
 }
 
 .float-btn {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .write-btn {
-    position: fixed;
-    bottom: 50px;
-    left: 50%;
-    display: flex;
-    justify-content: center;
-    transform: translate(-50%, -50%);
-    padding: 15px 80px;
-    border-radius: 30px;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 9px;
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  padding: 15px 80px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 9px;
 }
 
+/* canvas css */
+canvas {
+  background: #eee;
+}
+.color-btn {
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 50%;
+}
+.color-btn[data-color="black"] {
+  background: black;
+}
+.color-btn[data-color="red"] {
+  background: red;
+}
+.color-btn[data-color="green"] {
+  background: green;
+}
+.color-btn[data-color="blue"] {
+  background: blue;
+}
+.image-btn {
+  width: 40px;
+  height: 40px;
+  background: url(../images/ilbuni2.png) no-repeat 50% 50% / cover;
+}
+.result-image {
+}
