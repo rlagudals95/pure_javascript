@@ -79,6 +79,16 @@
 canvas {
   background: #eee;
 }
+
+.save-btn {
+  padding: 7px 30px;
+  border-radius: 30px;
+  margin-top: 20px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 9px;
+  font-weight: bold;
+  cursor: pointer;
+}
 .color-btn {
   width: 30px;
   height: 30px;
