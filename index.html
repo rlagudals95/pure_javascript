@@ -10,28 +10,44 @@
 <link rel="stylesheet" type="text/css" href="./css/common.css">
 <link rel="stylesheet" type="text/css" href="./css/config.css">
 <script src="./js/common.js"></script>
+<script src="./js/canvas.js"></script>
 
 <body>
     <div class="container">
-        <div class="c-flex">
+        <canvas id="canvas" height="500" width="500">This browser doesn't support canvas</canvas>
+        <button class="save-btn">이미지 저장</button>
+        <!-- <div class="c-flex">
             <div class="card">
                 <div class="title">title</div>
-                <p class="desc">description</p>
             </div>
             <div class=" card">card
             </div>
             <div class="card">card</div>
             <div class="card">card</div>
             <div class="card">card</div>
-            <div class="card">card</div>
-            <div class="card">card</div>
-            <div class="card">card</div>
-        </div>
-    </div>
-    <button id="write-btn" class="write-btn">
-        작성
-    </button>
+            <div class="card">card</div> 
+        </div> -->
+        <!-- <div class="control">
+            <button class="color-btn" data-type="color" data-color="black"></button>
+            <button class="color-btn" data-type="color" data-color="red"></button>
+            <button class="color-btn" data-type="color" data-color="green"></button>
+            <button class="color-btn" data-type="color" data-color="blue"></button>
+            <button class="image-btn" data-type="image"></button>
+        </div> -->
 
+        <div class="result-image"></div>
+        <!-- <div id="bottom-options">
+            <span style="background-color: black" class="bottom-btn">black</span>
+            <span style="background-color: red" class="bottom-btn">red</span>
+            <span style="background-color: blue" class="bottom-btn">blue</span>
+            <span style="background-color: green" class="bottom-btn">green</span>
+            <span style="background-color: purple" class="bottom-btn">purple</span>
+        </div> -->
+    </div>
+
+    <!-- <button id="write-btn" class="write-btn">
+        작성
+    </button> -->
 </body>
 
 </html>
