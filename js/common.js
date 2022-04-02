@@ -2,22 +2,22 @@ function write() {
   alert("제출!!");
 }
 
-function postServer(file) {
+function postServer(formData) {
   var data = new FormData();
-  data.append("user", file);
+  data.append("file", "file");
 
-  var xhr = new XMLHttpRequest();
-  xhr.open("POST", "backend", true);
-  xhr.onload = function () {
-    // do something to response
-    console.log(this.responseText);
-  };
-  xhr.send(data);
-
-  const url = "http://example.com";
+  // var xhr = new XMLHttpRequest();
+  // xhr.open("POST", "backend", true);
+  // xhr.onload = function () {
+  //   // do something to response
+  //   console.log(this.responseText);
+  // };
+  // xhr.send(data);
+  console.log("폼데이터 확인 :", formData);
+  const url = "http://localhost:8000/canvas/post";
   fetch(url, {
     method: "POST",
-    body: data,
+    body: formData,
     // -- or --
     // body : JSON.stringify({
     // user : document.getElementById('user').value,
@@ -25,7 +25,10 @@ function postServer(file) {
     // })
   })
     .then(
-      (response) => response.text() // .json(), etc.
+      (response) => {
+        console.log("response ::", response);
+        response.text();
+      } // .json(), etc.
       // same as function(response) {return response.text();}
     )
     .catch((err) => {

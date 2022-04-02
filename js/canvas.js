@@ -83,8 +83,8 @@ function saveImg() {
   var file = new Blob([new Uint8Array(array)], { type: "image/jpeg" });
   var fileName = "canvas_img_" + new Date().getMilliseconds() + ".jpg";
   var formData = new FormData();
-  console.log(file, fileName);
-  formData.append("file", file, fileName);
-
-  postServer();
+  console.log("파일정보 : ", file, fileName);
+  formData.append("file", file);
+  console.log("미리확인 : ", formData);
+  postServer(formData);
 }
