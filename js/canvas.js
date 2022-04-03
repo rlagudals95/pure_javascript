@@ -1,3 +1,10 @@
+function captureImg() {
+  html2canvas(document.querySelector("#canvas")).then((canvas) => {
+    console.log("캡처화면 ::", canvas);
+    document.body.appendChild(canvas);
+  });
+}
+
 // canvas.js
 var pos = {
   drawable: false,
@@ -7,6 +14,13 @@ var pos = {
 var canvas, ctx;
 
 window.onload = function () {
+  //
+  var captureBtn = document.getElementById("capture-btn");
+  // saveImg
+  console.log("captureBtn :: ", captureBtn);
+  captureBtn.addEventListener("click", captureImg);
+
+  //
   canvas = document.getElementById("canvas");
   ctx = canvas.getContext("2d");
 
