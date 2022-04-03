@@ -37,7 +37,7 @@ function listener(event) {
 }
 
 function initDraw(event) {
-  console.log("initDraw");
+  //console.log("initDraw");
   ctx.beginPath();
   pos.drawable = true;
   var coors = getPosition(event);
@@ -47,7 +47,7 @@ function initDraw(event) {
 }
 
 function draw(event) {
-  console.log("draw");
+  //console.log("draw");
   var coors = getPosition(event);
   ctx.lineTo(coors.X, coors.Y);
   pos.X = coors.X;
@@ -56,14 +56,14 @@ function draw(event) {
 }
 
 function finishDraw() {
-  console.log("finishDraw");
+  //console.log("finishDraw");
   pos.drawable = false;
   pos.X = -1;
   pos.Y = -1;
 }
 
 function getPosition(event) {
-  console.log("getPosition");
+  //console.log("getPosition");
   var x = event.pageX - canvas.offsetLeft;
   var y = event.pageY - canvas.offsetTop;
   return { X: x, Y: y };
